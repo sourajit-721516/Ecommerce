@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+  background-color: #f1f3f6;  /* Light grey background */
+  color: #212121;  /* Dark grey text */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar */
+}
+
+/* Navigation Bar */
+.nav {
+  width: 100%;
+}
+
+.nav_bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2874f0;  /* Flipkart blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.nav_bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.nav_bar a:hover {
+  color: #ffc107;  /* Flipkart yellow hover */
+}
+
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  width: 40%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search_bar input {
+  border: none;
+  background-color: white;
+  color: #333;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.search_bar input::placeholder {
+  font-weight: normal;
+  color: #888;
+}
+
+.search_bar input:focus {
+  outline: none;
+}
+
+.search_bar button {
+  background-color: #28f0a3f1;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+.search_bar button:hover {
+  background-color: #005bb5;  /* Darker blue on hover */
+}
+
+/* Sub-bar */
+.sub_bar {
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+  background-color: #f4f4f489; /* You can choose your own color */
+  width: 100%; /* Take full width */
+  padding: 10px; /* Padding for a clean look */
+  position: relative; /* Ensure it doesn't affect other layout elements */
+}
+
+.items {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #532476; /* Button background */
+  color: white; /* Button text color */
+  border-radius: 4px;
+  text-align: center;
+}
+
+.items:hover {
+  background-color: #6549a5; /* Change color on hover */
+}
+
+
+/* Table Data */
+td {
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+td:hover {
+  background-color: #f1f1f1;  /* Light background hover */
+}
+
+/* Button Style */
+button {
+  background-color: #ff5722;  /* Flipkart orange */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e64a19;  /* Darker orange on hover */
+}
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar-content {
+  color: white;
+  padding: 10px;
+}
+
+.sidebar .items {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .items:hover {
+  color: #f1f1f1;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #2874f0;  /* Match with navbar background color */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar-content {
+  color: white;
+  padding: 10px;
+}
+
+.sidebar .items {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px; /* Adjusted for better readability */
+  color: white;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 10px; /* Add gap between items */
+  border-radius: 4px;  /* Rounded corners for better design */
+}
+
+.sidebar .items:hover {
+  background-color: #005bb5; /* Darker blue for hover effect */
+}

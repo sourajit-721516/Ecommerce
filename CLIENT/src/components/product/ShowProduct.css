@@ -1,0 +1,78 @@
+/* Ensure the card and its contents are properly styled */
+.product-card {
+    background-color: #f8f9fa; /* Light background for the card */
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 10px; /* Slightly larger border radius for a more rounded look */
+    overflow: hidden; /* Ensure content does not overflow */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; /* Ensure card takes full width of the column */
+    max-width: 300px; /* Adjust width to fit content */
+  }
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* Increased padding for better spacing */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Adjusted max-height for larger images */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding for better spacing */
+    flex-grow: 1; /* Ensure card body grows to fill available space */
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    margin-bottom: 0.75rem; /* Increased margin for better spacing */
+  }
+  
+  .product-price-container {
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  }
+  
+  .product-price {
+    font-size: 1.25rem; /* Larger font size for the price */
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 15px; /* Increased padding for a larger button */
+    color: #fff;
+    border-radius: 5px; /* Slightly larger border radius for the button */
+    width: 100%;
+    font-size: 1rem; /* Larger font size for the button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Ensure the cards are responsive and fit the container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some gap between the cards */
+  }
+  
+  .col-md-3 {
+    flex: 1 1 23%; /* Ensure four cards fit per row */
+    max-width: 23%;
+    box-sizing: border-box;
+  }
+  
